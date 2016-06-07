@@ -1,0 +1,82 @@
+CONTRACT_TYPE
+{
+    name = Delta-A 
+    group = LauncherMission
+    title = Delta-A
+    notes = Test a new rocket design.
+    synopsis = Launch a test of the Delta-A
+    description = The Delta A, or Thor-Delta A was an American expendable launch system used to launch two Explorer spacecraft in October 1962. A derivative of the Thor-Delta, it was a member of the Delta family of rockets. The first stage was a Thor missile in the DM-21 configuration, and the second stage was the Delta A, an uprated version of the original Delta. An Altair solid rocket motor was used as a third stage. Both launches occurred from Cape Canaveral Air Force Station Launch Complex 17B, and were successful. The first launched Explorer 14, and the second Explorer 15.
+    completedMessage = Mission Success!
+    prestige = Trivial
+    minExpiry = 1
+    maxExpiry = 30
+    agent = USAF
+    deadline = 70
+    maxCompletions = 1
+    cancellable = true
+    declinable = true
+    targetBody = Kerbin
+    rewardScience = 1
+    rewardReputation = 5
+    rewardFunds = 15000
+    failureReputation = 75
+    failureFunds = 50000
+    advanceFunds = 20000
+
+PARAMETER
+{
+	name = Delta-A 
+	type = VesselParameterGroup
+	title = Launch the Delta-A rocket.
+	define = Delta-A
+
+PARAMETER 
+{
+	name = Crewmembers
+	type = HasCrew 
+	minCrew = 0
+	maxCrew = 0
+}
+
+PARAMETER
+{
+    name = Orbit
+    type = Orbit
+    targetBody = Kerbin
+    situation = ORBITING
+    disableOnStateChange = True
+    minPeA = 260000
+    
+}
+
+PARAMETER
+{
+    name = HasResource
+    type = HasResource
+
+    resource = LiquidFuel
+    minQuantity = 2000.0
+
+    disableOnStateChange = True
+}
+PARAMETER
+{
+    name = HasResource
+    type = HasResource
+
+    resource = SolidFuel
+    maxQuantity = 100.0
+
+    disableOnStateChange = True
+}
+}
+REQUIREMENT
+{
+    name = CompleteContract
+    type = CompleteContract
+    contractType = LGM-25C Titan-II
+    minCount = 1
+    maxCount = 1
+    cooldownDuration = 30d
+}
+}

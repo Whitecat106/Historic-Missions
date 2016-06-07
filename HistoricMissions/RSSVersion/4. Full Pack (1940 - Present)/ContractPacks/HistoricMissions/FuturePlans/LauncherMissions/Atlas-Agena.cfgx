@@ -1,0 +1,83 @@
+CONTRACT_TYPE
+{
+    name = Atlas-Agena
+    group = LauncherMission
+    title = Atlas-Agena
+    notes = Test a new rocket design.
+    synopsis = Launch a test of the Atlas-Agena
+    description = The Atlas-Agena was an American expendable launch system derived from the SM-65 Atlas missile. It was a member of the Atlas family of rockets, and was launched 119 times between 1960 and 1978.[1] It was used to launch the first five Mariner unmanned probes to the planets Venus and Mars, and the Ranger and Lunar Orbiter unmanned probes to the Moon. The upper stage was also used as an unmanned orbital target vehicle for the Gemini manned spacecraft to practice rendezvous and docking.
+    completedMessage = Mission Success!
+    prestige = Trivial
+    minExpiry = 1
+    maxExpiry = 30
+    agent = USAF
+    deadline = 70
+    maxCompletions = 1
+    cancellable = true
+    declinable = true
+    targetBody = Kerbin
+    rewardScience = 1
+    rewardReputation = 5
+    rewardFunds = 15000
+    failureReputation = 75
+    failureFunds = 50000
+    advanceFunds = 20000
+
+PARAMETER
+{
+	name = Atlas-Agena
+	type = VesselParameterGroup
+	title = Launch the Atlas-Agena rocket.
+	define = Atlas-Agena
+
+PARAMETER 
+{
+	name = Crewmembers
+	type = HasCrew 
+	minCrew = 0
+	maxCrew = 0
+}
+
+PARAMETER
+{
+    name = Orbit
+    type = Orbit
+    targetBody = Kerbin
+    situation = ORBITING
+    disableOnStateChange = True
+    minPeA = 360000
+    minInclination = 5
+    
+}
+
+PARAMETER
+{
+    name = HasResource
+    type = HasResource
+
+    resource = LiquidFuel
+    minQuantity = 800.0
+
+    disableOnStateChange = True
+}
+PARAMETER
+{
+    name = HasResource
+    type = HasResource
+
+    resource = SolidFuel
+    maxQuantity = 0.0
+
+    disableOnStateChange = True
+}
+}
+REQUIREMENT
+{
+    name = CompleteContract
+    type = CompleteContract
+    contractType = SM-65D Atlas
+    minCount = 1
+    maxCount = 1
+    cooldownDuration = 30d
+}
+}

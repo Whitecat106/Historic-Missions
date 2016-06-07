@@ -1,0 +1,192 @@
+===== VERSION 0.0.0 ===== (Pretest Version 0.0.0)
+
+* STS-1 to 135 complete, needs error testing.
+* Mir construction and expeditions complete.
+* ISS construction complete.
+* Logos for Mir, ISS and STS mission agents.
+
+==== VERSION 0.0.1 ===== (Pretest Version 0.0.1)
+
+* Salyut 1 to 7 complete, needs error testing.
+* Buran complete.
+* Soyuz 1 to TM-1 complete, needs descriptions.
+* Mir & ISS need historical descriptions.
+
+==== VERSION 0.0.2 ===== ( Pretest Version 0.0.2) 
+
+* Added Pre1960's missions, Vostok, Voskhod, Buran, Mercury, Gemini, Apollo & Skylab Missions with descriptions.
+* Removed Mass dependancies for STS missions. 
+
+==== VERSION 1.0.0 ===== ( Release Version 1.0.0)
+
+* Added Pioneer, Mariner and Voyager programs
+* Error checked major contracts for errors.
+* Most likely issues: STS-HST deployment, Possibly some Soyuz name missmatches. 
+
+
+==== VERSION 1.0.1 ===== ( Release Version 1.0.1)
+
+* Added Cassini, MESSENGER, Galileo, Ulysses, Magellan, Surveyor, Venera, Shenzhou, Tiangong, Lunokhod and the martian rovers.
+* Bugfixed Soyuz 'hasAstronaut' fields to 'hasCrew'.
+* Adjusted some contracts based on feedback of Agency approach rather than Chronological approach.
+
+=== VERSION 1.0.2 ===== ( Release Version 1.0.2)
+
+* HOTFIX - Sts-41 * Sts-98 'abitious' bug.
+* Fixed CNSA flag errors.
+
+=== VERSION 1.0.3 ===== ( Release Version 1.0.3)
+
+* Included Ranger 7,8,9.
+* Added descriptions to Soyuz missions and ISS Assembly missions. 
+* Included Juno, New Horizions, Dawn, Hayabusa, Genesis, Sakigake, Suisei, NEAR Shoemaker and Rosetta. 
+* Added JAXA agency. Still fighting with the CNSA logo bug.. 
+
+=== VERSION 1.0.4 ===== ( Release Version 1.0.4)
+
+* Hotfix for Mercury Freedom-7 and Libery-Bell-7 being impossible to complete.
+
+=== VERSION 1.1.0 ===== ( Relsease Version 1.1.0)
+
+* Shuttle Enterprise ALT-15 and 16 added.
+* Vega Program added.
+* Added the ESA agency and reassigned some contracts. 
+* Kepler, JWST, HSO.
+* Hmmm... this CNSA logo is getting irritating now.. 
+
+=== VERSION 1.2.0 ===== ( Release Version 1.2.0)
+
+* X-15 Mach record flights added. 
+* Sputnik 2 & 3 added. 
+* Added early American(V2-No.20) and Russian(R-1V) V-2 tests.
+* Rebalanced V-2 rocket tests, should now be fully working with Tantares V-2 replica.
+
+=== VERSION 1.2.1 ===== ( Release Version 1.2.1) 
+
+* Added CKAN and Kerbal Stuff pages and downloads.
+
+=== VERSION 1.2.2 ===== ( Release Version 1.2.2)
+
+* Added RSS version. 
+* Fixed bug in Buran Mission.
+* Fixed bug in Kvant-2 Mission (Thanks DunaDirect).
+* Changed some contract names (might fix the Module Manager.ConfigCache and .SHA bug (Thanks again DunaDirect!)
+
+=== VERSION 1.2.2.1 ===== ( Release Version 1.2.2.1)
+
+* Super quick hotfix for the CNSA logo! (Thanks DunaDirect).
+
+=== VERSION 1.2.3 ===== ( Release Version 1.2.3)
+
+* Fixed RSS version bugs and re-released (Thanks RickKermen).
+
+=== VERSION 1.2.4 ===== ( Release Version 1.2.4)
+
+* Added Explorer 1-5
+* Added Helios 1 & 2
+* Experimented with some reputation reward changes (more to come). 
+
+=== VERSION 1.2.5 ===== (Release Version 1.2.5)
+
+* Hotfixed impossible Gemini-I and II missions (Thanks DunaDirect). 
+
+=== VERSION 1.2.6 ===== (Release Version 1.2.6)
+
+* Hotfixed impossible Gemini-II mission (again!) and Gemini-VII mistype (Thanks DunaDirect). 
+
+=== VERSION 1.2.7 ===== (Release Version 1.2.7)
+
+* Multiple fixes for Gemini VI, VII and VIII.
+* Finally fixed the CNSA logo.
+* Fix for NoRandomContract mentality. 
+^ All thanks to DunaDirect! 
+
+* Rebalanced reputation rewards up to STS-1.
+* Added land on runway requirements for Shuttle ALT and X-15 flights.
+* Fixed duration requirements of Pre Gemini, Gemini, Skylab (more to come).
+
+
+=== VERSION 1.3.0 ===== (Release Version 1.3.0)
+
+* Separate Era packs now divide the full version into 3 chunks. (1940-1975, 1975-1998, 1998+)
+* Various miscellaneous fixed across the pack. 
+^ Since more untested missions are now playable expect bugs! 
+
+=== VERSION 1.3.1 ===== (Release Version 1.3.1)
+
+* Fixed Rover mission Issues
+
+=== VERSION 1.3.2 ===== (Release Version 1.3.2)
+
+* Fixed X-15 flights and a minor error in the contract sub groups. 
+
+=== VERSION 1.3.3 ===== (Release Version 1.3.3) 
+
+* Fixed Shuttle ALT flights. 
+
+=== VERSION 1.3.4 ===== (Release Version 1.3.4)
+
+* First round of Vessel validation (Need some feedback for what needs to be changed next!) 
+
+=== VERSION 1.3.4 ===== (Release Version 1.3.4)
+
+* First round of Vessel validation (Need some feedback for what needs to be changed next!) 
+
+=== VERSION 1.4.0 ===== (Release Version 1.4.0)
+
+* Added all ISS expeditions (Soyuz TM-31 to Soyuz TMA-16M)
+
+=== VERSION 1.5.0 ===== (Release Version 1.5.0)
+
+* Added STS-136 and STS-144 (alternate history missions), added Vanguard program and fixed issues in Soyuz missions. 
+
+=== VERSION 1.6.0 ===== (Release Version 1.6.0)
+
+* Full change log included in download, this release is thanks to Gerishnakov!
+
+=== VERSION 1.6.1 ===== (Release Version 1.6.1)
+
+* Bugfixes for A-3, Ranger-3 and Luna-1
+
+=== VERSION 1.6.2 - 1.7.0 (Lost due to KerbalStuff termination)
+
+*****
+
+=== VERSION 1.8.0 ===== (Release Version 1.8.0) (RSS Version 1.8.0)
+
+* Readded RSS Version
+
+=== VERSION 1.9.0 ===== (Release Version 1.9.0) (RSS Version 1.9.0)
+
+* Added GeoScience Missions (GOES program, Ariel, Alouette etc.) - 50 More contracts across all eras
+* Readded Military Missions (Nimbus, Vortex) - 20 More contracts 
+* Readded Foton Program (16 More contracts)
+* Established structure for 2.0.0 missions (Moonbase, SpaceX, MarsOne etc.)
+
+=== VERSION 2.0.0 ===== (Release Version 2.0.0) (RSS Version 2.0.0)
+
+* Added SpaceX Missions (23 More contracts)
+* Added Project Horizon (Alternate History) 
+* Fixed RSS version
+* Added Space Shuttle Cancelled Missions
+
+=== VERSION 2.1.0 ===== (Release Version 2.1.0) (RSS Version 2.1.0)
+
+* Added NewVessel requirement to every contract 
+* Total contract count = 667
+
+=== VERSION 2.2.0 ===== (Release Version 2.2.0) (RSS Version 2.2.0) 
+
+* Added Bion Program (12 Contracts)
+* Added Soyuz TMA-15M to Soyuz TMA-20M (5 Contracts)
+* Added Lunar Orbiter Program (5 Contracts)
+* Renamed TargetBody = Earth to TargetBody = HomeWorld() for RO - RP-0 support
+* Total contract count = 689
+
+
+To be done:
+
+- Next up: (Version 2.3.0)
+
+* Model Memorial Items for STS-107 and STS-51-L. 
+* A plugin extension for contract configurator for identification of a carrier and a payload

@@ -1,0 +1,7 @@
+
+-If upgrading to a newer version of this Pack, delete the following files from your GameData directory after installing the new version: 
+
+Module Manager.ConfigCache 
+Module Manager.Config.SHA
+
+I have no idea why but these can sometimes prevent new contracts from being displayed after an update. 

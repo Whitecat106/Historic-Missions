@@ -1,0 +1,76 @@
+ship = Ion-Powered Space Probe
+version = 0.90.0
+description = 
+type = VAB
+size = 1.997433,2.833771,2.25865
+PART
+{
+	part = PotatoRoid
+	partName = Part
+	pos = -0.06833602,4.196513,-0.05228119
+	attPos = 0,0,0
+	attPos0 = 0,0,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = xenonTank_4294262210
+	link = rtg_4294262184
+	link = rtg_4294262158
+	link = commDish_4294262086
+	link = sensorAccelerometer_4294261948
+	link = sensorThermometer_4294261926
+	link = batteryPack_4294261904
+	link = batteryPack_4294261870
+	attN = bottom,xenonTank_4294262210
+	attN = top,commDish_4294262086
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCommand
+		isEnabled = True
+		controlSrcStatusText = 
+		EVENTS
+		{
+			MakeReference
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control From Here
+				guiName = Control From Here
+				category = Control From Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			RenameVessel
+			{
+				active = True
+				guiActive = True
+				guiIcon = Rename Vessel
+				guiName = Rename Vessel
+				category = Rename Vessel
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+}
+

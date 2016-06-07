@@ -1,0 +1,6 @@
+- All Descriptions featured in a contract come from Wikipeida and the respective page author. 
+- All Logos have been extracted from Google Images and as such, have been passed into the public domain. 
+- Many thanks to Nightingale for his help providing solutions to problems.
+- Many thanks also to DunaDirect for invaluable help bug testing and producing fixed contracts. 
+- Thanks to gerishnakov for his work towards the 1.5.0 and 1.6.0 update including various enhancements and improvements!
+- Thanks to Rokanov for his work towards a 2.0.0 version

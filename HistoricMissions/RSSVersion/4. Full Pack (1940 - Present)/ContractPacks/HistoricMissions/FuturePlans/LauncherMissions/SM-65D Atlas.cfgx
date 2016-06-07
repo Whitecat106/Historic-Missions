@@ -1,0 +1,83 @@
+CONTRACT_TYPE
+{
+    name = SM-65D Atlas
+    group = LauncherMission
+    title = SM-65D Atlas
+    notes = Test a new rocket design.
+    synopsis = Launch a test of the SM-65D Atlas
+    description = The SM-65D Atlas, or Atlas D, was the first operational version of the U.S. Atlas missile. Atlas D was first used as an intercontinental ballistic missile (ICBM) to deliver a nuclear weapon payload on a suborbital trajectory. It was later developed as a launch vehicle to carry a payload to low Earth orbit on its own, and later to geosynchronous orbit, to the Moon, Venus, or Mars with the Agena or Centaur upper stage. Atlas D was launched from Cape Canaveral Air Force Station, at Launch Complexes 11, 12, 13 and 14, and Vandenberg Air Force Base at Launch Complex 576.
+    completedMessage = Mission Success!
+    prestige = Trivial
+    minExpiry = 1
+    maxExpiry = 30
+    agent = USAF
+    deadline = 70
+    maxCompletions = 1
+    cancellable = true
+    declinable = true
+    targetBody = Kerbin
+    rewardScience = 1
+    rewardReputation = 5
+    rewardFunds = 15000
+    failureReputation = 75
+    failureFunds = 50000
+    advanceFunds = 20000
+
+PARAMETER
+{
+	name = SM-65D Atlas
+	type = VesselParameterGroup
+	title = Launch the SM-65D Atlas rocket.
+	define = SM-65D Atlas
+
+PARAMETER 
+{
+	name = Crewmembers
+	type = HasCrew 
+	minCrew = 0
+	maxCrew = 0
+}
+
+PARAMETER
+{
+    name = Orbit
+    type = Orbit
+    targetBody = Kerbin
+    situation = ORBITING
+    disableOnStateChange = True
+    minPeA = 360000
+    minInclination = 5
+    
+}
+
+PARAMETER
+{
+    name = HasResource
+    type = HasResource
+
+    resource = LiquidFuel
+    minQuantity = 800.0
+
+    disableOnStateChange = True
+}
+PARAMETER
+{
+    name = HasResource
+    type = HasResource
+
+    resource = SolidFuel
+    maxQuantity = 0.0
+
+    disableOnStateChange = True
+}
+}
+REQUIREMENT
+{
+    name = CompleteContract
+    type = CompleteContract
+    contractType = SM-65 Atlas
+    minCount = 1
+    maxCount = 1
+    cooldownDuration = 30d
+}
+}
