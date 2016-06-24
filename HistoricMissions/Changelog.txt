@@ -181,7 +181,11 @@
 * Added Soyuz TMA-15M to Soyuz TMA-20M (5 Contracts)
 * Added Lunar Orbiter Program (5 Contracts)
 * Renamed TargetBody = Earth to TargetBody = HomeWorld() for RO - RP-0 support
-* Total contract count = 689
+* Fixed Duration parameters
+* Added Luna 6-9 (4 Contracts)
+* Replaced 'offensive' logo 
+* Multiple minor fixes
+* Total contract count = 672
 
 
 To be done:
