@@ -1,0 +1,81 @@
+CONTRACT_TYPE
+{
+    name = Saturn-V
+    group = LauncherMission
+    title = Saturn-V 
+    notes = Test a new rocket design.
+    synopsis = Launch a test of the Saturn-V 
+    description = The Saturn V (spoken as "Saturn five") was an American human-rated expendable rocket used by NASA between 1966 and 1973. The three-stage liquid-fueled launch vehicle was developed to support the Apollo program for human exploration of the Moon, and was later used to launch Skylab, the first American space station. The Saturn V was launched 13 times from the Kennedy Space Center in Florida with no loss of crew or payload. The Saturn V remains the tallest, heaviest, and most powerful rocket ever brought to operational status and still holds records for the heaviest payload launched and largest payload capacity to low Earth orbit (LEO) of 118,000 kilograms (260,000 lb).
+    completedMessage = Mission Success!
+    prestige = Trivial
+    minExpiry = 1
+    maxExpiry = 30
+    agent = USAF
+    deadline = 70
+    maxCompletions = 1
+    cancellable = true
+    declinable = true
+    targetBody = Kerbin
+    rewardScience = 1
+    rewardReputation = 5
+    rewardFunds = 15000
+    failureReputation = 75
+    failureFunds = 50000
+    advanceFunds = 20000
+
+PARAMETER
+{
+	name = Saturn-V 
+	type = VesselParameterGroup
+	title = Launch the Saturn-V rocket.
+	define = Saturn-V 
+
+PARAMETER 
+{
+	name = Crewmembers
+	type = HasCrew 
+	minCrew = 0
+	maxCrew = 0
+}
+
+PARAMETER
+{
+    name = Orbit
+    type = Orbit
+    targetBody = Kerbin
+    situation = ORBITING
+    disableOnStateChange = True
+    minPeA = 200000    
+}
+
+PARAMETER
+{
+    name = HasResource
+    type = HasResource
+
+    resource = LiquidFuel
+    minQuantity = 6000.0
+
+    disableOnStateChange = True
+}
+PARAMETER
+{
+    name = HasResource
+    type = HasResource
+
+    resource = SolidFuel
+    maxQuantity = 100
+
+    disableOnStateChange = True
+}
+}
+REQUIREMENT
+{
+    name = CompleteContract
+    type = CompleteContract
+    contractType = Saturn-I
+    minCount = 1
+    maxCount = 1
+    cooldownDuration = 30d
+}
+}

@@ -1,0 +1,83 @@
+CONTRACT_TYPE
+{
+    name = PGM-11Redstone
+    group = LauncherMission
+    title = PGM-11Redstone
+    notes = Test a new rocket design.
+    synopsis = Launch a test of the PGM-11 Redstone
+    description = The PGM-11 Redstone was the first large American ballistic missile. A short-range surface-to-surface rocket, it was in active service with the United States Army in West Germany from June 1958 to June 1964 as part of NATO's Cold War defense of Western Europe. It was the first missile to carry a live nuclear warhead, in the 1958 Pacific Ocean weapons test, Hardtack Teak. A direct descendant of the German V-2 rocket, the missile was the foundation for the Redstone rocket family, It was developed by a team of predominantly German rocket engineers relocated to the United States after World War II as part of Operation Paperclip. Redstone's prime contractor was the Chrysler Corporation. For its role as a field artillery theater ballistic missile, Redstone earned the moniker "the Army's Workhorse". It was retired by the U.S. in 1964 and replaced by the MGM-31 Pershing. In 1967 a surplus Redstone helped launch Australia's first satellite. 
+    completedMessage = Mission Success!
+    prestige = Trivial
+    minExpiry = 1
+    maxExpiry = 30
+    agent = USAF
+    deadline = 70
+    maxCompletions = 1
+    cancellable = true
+    declinable = true
+    targetBody = Kerbin
+    rewardScience = 1
+    rewardReputation = 5
+    rewardFunds = 15000
+    failureReputation = 75
+    failureFunds = 50000
+    advanceFunds = 20000
+
+PARAMETER
+{
+	name = PGM-11Redstone
+	type = VesselParameterGroup
+	title = Launch the PGM-11 Redstone rocket.
+	define = PGM-11Redstone
+
+PARAMETER 
+{
+	name = Crewmembers
+	type = HasCrew 
+	minCrew = 0
+	maxCrew = 0
+}
+
+PARAMETER
+{
+    name = ReachState
+    type = ReachState
+    minAltitude = 20000
+    maxAltitude = 120000
+    disableOnStateChange = True
+    minSpeed = 150
+    targetBody = Kerbin
+    situation = FLYING
+    title = Reach a suborbital situation
+}
+
+PARAMETER
+{
+    name = HasResource
+    type = HasResource
+
+    resource = LiquidFuel
+    minQuantity = 100.0
+    disableOnStateChange = True
+}
+PARAMETER
+{
+    name = HasResource
+    type = HasResource
+
+    resource = SolidFuel
+    maxQuantity = 0.0
+    disableOnStateChange = True
+}
+}
+
+REQUIREMENT
+{
+    name = CompleteContract
+    type = CompleteContract
+    contractType = V-2N20
+    minCount = 1
+    maxCount = 1
+    cooldownDuration = 10d
+}
+}

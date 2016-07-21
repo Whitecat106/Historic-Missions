@@ -1,0 +1,81 @@
+CONTRACT_TYPE
+{
+    name = Saturn-IB
+    group = LauncherMission
+    title = Saturn-IB
+    notes = Test a new rocket design.
+    synopsis = Launch a test of the Saturn-IB
+    description = The Saturn IB (pronounced "one B", also known as the Uprated Saturn I) was an American launch vehicle commissioned by the National Aeronautics and Space Administration (NASA) for the Apollo program. It replaced the S-IV second stage of the Saturn I with the much more powerful S-IVB, able to launch a partially fueled Apollo Command/Service Module (CSM) or a fully fueled Lunar Module (LM) into low Earth orbit for early flight tests before the larger Saturn V needed for lunar flight was ready. By sharing the S-IVB upper stage, the Saturn IB and Saturn V provided a common interface to the Apollo spacecraft. The only major difference was that the S-IVB on the Saturn V burned only part of its propellant to achieve Earth orbit, so it could be restarted for translunar injection. The S-IVB on the Saturn IB needed all of its propellant to achieve Earth orbit. The Saturn IB launched two unmanned CSM suborbital flights, one unmanned LM orbital flight, and the first manned CSM orbital mission (first planned as Apollo 1, later flown as Apollo 7). It also launched one orbital mission, AS-203, without a payload so the S-IVB would have residual liquid hydrogen fuel. This mission supported the design of the restartable version of the S-IVB used in the Saturn V, by observing the behavior of the liquid hydrogen in weightlessness.
+   completedMessage = Mission Success!
+    prestige = Trivial
+    minExpiry = 1
+    maxExpiry = 30
+    agent = USAF
+    deadline = 70
+    maxCompletions = 1
+    cancellable = true
+    declinable = true
+    targetBody = Kerbin
+    rewardScience = 1
+    rewardReputation = 5
+    rewardFunds = 15000
+    failureReputation = 75
+    failureFunds = 50000
+    advanceFunds = 20000
+
+PARAMETER
+{
+	name = Saturn-IB
+	type = VesselParameterGroup
+	title = Launch the Saturn-IB rocket.
+	define = Saturn-IB
+
+PARAMETER 
+{
+	name = Crewmembers
+	type = HasCrew 
+	minCrew = 0
+	maxCrew = 0
+}
+
+PARAMETER
+{
+    name = Orbit
+    type = Orbit
+    targetBody = Kerbin
+    situation = ORBITING
+    disableOnStateChange = True
+    minPeA = 200000    
+}
+
+PARAMETER
+{
+    name = HasResource
+    type = HasResource
+
+    resource = LiquidFuel
+    minQuantity = 4000.0
+
+    disableOnStateChange = True
+}
+PARAMETER
+{
+    name = HasResource
+    type = HasResource
+
+    resource = SolidFuel
+    maxQuantity = 100
+
+    disableOnStateChange = True
+}
+}
+REQUIREMENT
+{
+    name = CompleteContract
+    type = CompleteContract
+    contractType = Saturn-I
+    minCount = 1
+    maxCount = 1
+    cooldownDuration = 40d
+}
+}

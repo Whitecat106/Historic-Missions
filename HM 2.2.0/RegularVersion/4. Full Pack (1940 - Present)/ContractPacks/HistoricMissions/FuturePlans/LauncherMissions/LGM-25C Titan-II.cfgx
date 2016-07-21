@@ -1,0 +1,84 @@
+CONTRACT_TYPE
+{
+    name =  LGM-25C Titan II 
+    group = LauncherMission
+    title = LGM-25C Titan II
+    notes = Test a new rocket design.
+    synopsis = Launch a test of the LGM-25C Titan II
+    description = The Titan II was an intercontinental ballistic missile (ICBM) and space launcher developed by the Glenn L. Martin Company from the earlier Titan I missile. Titan II was originally used as an ICBM. It was later used as a medium-lift space launch vehicle to carry payloads for the United States Air Force (USAF), National Aeronautics and Space Administration (NASA) and National Oceanic and Atmospheric Administration (NOAA). These payloads include the USAF Defense Meteorological Satellite Program (DMSP), the NOAA weather satellites, and NASA's Gemini manned space capsules. The modified Titan II SLVs (Space Launch Vehicles) were launched from Vandenberg Air Force Base, California up until 2003.
+    completedMessage = Mission Success!
+    prestige = Trivial
+    minExpiry = 1
+    maxExpiry = 30
+    agent = USAF
+    deadline = 70
+    maxCompletions = 1
+    cancellable = true
+    declinable = true
+    targetBody = Kerbin
+    rewardScience = 1
+    rewardReputation = 5
+    rewardFunds = 15000
+    failureReputation = 75
+    failureFunds = 50000
+    advanceFunds = 20000
+
+PARAMETER
+{
+	name = LGM-25C Titan II 
+	type = VesselParameterGroup
+	title = Launch the LGM-25C Titan II rocket.
+	define = LGM-25C Titan II
+
+PARAMETER 
+{
+	name = Crewmembers
+	type = HasCrew 
+	minCrew = 0
+	maxCrew = 0
+}
+
+PARAMETER
+{
+    name = Orbit
+    type = Orbit
+    targetBody = Kerbin
+    situation = ORBITING
+    disableOnStateChange = True
+    minPeA = 160000
+    minEccentricity = 0.1
+    minInclination = 25
+    
+}
+
+PARAMETER
+{
+    name = HasResource
+    type = HasResource
+
+    resource = LiquidFuel
+    minQuantity = 2000.0
+
+    disableOnStateChange = True
+}
+PARAMETER
+{
+    name = HasResource
+    type = HasResource
+
+    resource = SolidFuel
+    maxQuantity = 0.0
+
+    disableOnStateChange = True
+}
+}
+REQUIREMENT
+{
+    name = CompleteContract
+    type = CompleteContract
+    contractType = HGM-25A Titan-I
+    minCount = 1
+    maxCount = 1
+    cooldownDuration = 50d
+}
+}

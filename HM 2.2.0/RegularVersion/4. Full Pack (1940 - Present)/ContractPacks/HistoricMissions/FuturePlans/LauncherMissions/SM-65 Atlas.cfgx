@@ -1,0 +1,82 @@
+CONTRACT_TYPE
+{
+    name =  SM-65 Atlas 
+    group = LauncherMission
+    title = SM-65 Atlas 
+    notes = Test a new rocket design.
+    synopsis = Launch a test of the  SM-65 Atlas 
+    description = The SM-65 Atlas was the first intercontinental ballistic missile (ICBM) developed and deployed by the United States. It was built for the U.S. Air Force by Convair Division of General Dynamics at the Kearny Mesa assembly plant north of San Diego, California. Atlas became operational as an ICBM in October 1959 and was used as a first stage for satellite launch vehicles for half a century. The Atlas missile's warhead was over 100 times more powerful than the bomb dropped over Nagasaki in 1945.
+    completedMessage = Mission Success!
+    prestige = Trivial
+    minExpiry = 1
+    maxExpiry = 30
+    agent = USAF
+    deadline = 70
+    maxCompletions = 1
+    cancellable = true
+    declinable = true
+    targetBody = Kerbin
+    rewardScience = 1
+    rewardReputation = 5
+    rewardFunds = 15000
+    failureReputation = 75
+    failureFunds = 50000
+    advanceFunds = 20000
+
+PARAMETER
+{
+	name =  SM-65 Atlas 
+	type = VesselParameterGroup
+	title = Launch the SM-65 Atlas  rocket.
+	define =  SM-65 Atlas 
+
+PARAMETER 
+{
+	name = Crewmembers
+	type = HasCrew 
+	minCrew = 0
+	maxCrew = 0
+}
+
+PARAMETER
+{
+    name = ReachState
+    type = ReachState
+    minAltitude = 20000
+    maxAltitude = 120000
+    disableOnStateChange = True
+    minSpeed = 150
+    targetBody = Kerbin
+    situation = FLYING
+    title = Reach a suborbital situation
+}
+
+PARAMETER
+{
+    name = HasResource
+    type = HasResource
+
+    resource = LiquidFuel
+    minQuantity = 800.0
+    disableOnStateChange = True
+}
+PARAMETER
+{
+    name = HasResource
+    type = HasResource
+
+    resource = SolidFuel
+    maxQuantity = 0.0
+    disableOnStateChange = True
+}
+}
+REQUIREMENT
+{
+    name = CompleteContract
+    type = CompleteContract
+    contractType = PGM-11Redstone
+    minCount = 1
+    maxCount = 1
+    cooldownDuration = 30d
+}
+}
