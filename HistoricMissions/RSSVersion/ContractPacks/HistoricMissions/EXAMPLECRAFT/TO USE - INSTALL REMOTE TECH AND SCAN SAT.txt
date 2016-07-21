@@ -1,0 +1,5 @@
+These are some example premade payloads for the specific Space Shuttle Missions
+
+-Install Remote Tech and Scan Sat then copy and paste into your Saves/-YOURSAVENAMEHERE-/Ships/VAB
+
+-Or even better, install the Amercian Probes Pack from the KSP Community Mods and Plugins Library for some realisic payloads. 

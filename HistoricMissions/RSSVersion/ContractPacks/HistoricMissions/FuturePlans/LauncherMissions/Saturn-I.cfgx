@@ -1,0 +1,81 @@
+CONTRACT_TYPE
+{
+    name = Saturn-I
+    group = LauncherMission
+    title = Saturn-I
+    notes = Test a new rocket design.
+    synopsis = Launch a test of the Saturn-I
+    description = The Saturn I (pronounced "Saturn one") was the United States' first heavy-lift dedicated space launcher, a rocket designed specifically to launch large payloads into low Earth orbit. Most of the rocket's power came from a clustered lower stage consisting of tanks taken from older rocket designs strapped together to make a single large booster, leading critics to jokingly refer to it as "Cluster's Last Stand". However, its design proved sound and very flexible. Its major successes were launching the Pegasus satellites and flight verification of the Apollo Command and Service Module aerodynamics in the launch phase. Originally intended as a near-universal military booster during the 1960s, it served only for a brief period and only with NASA; ten Saturn I rockets were flown before it was replaced by the derivative Saturn IB, which featured a more powerful upper stage and improved instrumentation. President John F. Kennedy identified the Saturn I, and the SA-5 launch in particular, as being the point where US lift capability would surpass the Soviets, after being behind since Sputnik. That was last mentioned in a speech he gave at Brooks AFB in San Antonio on the day before he was assassinated. He never lived to see this capability realized.
+    completedMessage = Mission Success!
+    prestige = Trivial
+    minExpiry = 1
+    maxExpiry = 30
+    agent = USAF
+    deadline = 70
+    maxCompletions = 1
+    cancellable = true
+    declinable = true
+    targetBody = Kerbin
+    rewardScience = 1
+    rewardReputation = 5
+    rewardFunds = 15000
+    failureReputation = 75
+    failureFunds = 50000
+    advanceFunds = 20000
+
+PARAMETER
+{
+	name = Saturn-I 
+	type = VesselParameterGroup
+	title = Launch the Saturn-I rocket.
+	define = Saturn-I
+
+PARAMETER 
+{
+	name = Crewmembers
+	type = HasCrew 
+	minCrew = 0
+	maxCrew = 0
+}
+
+PARAMETER
+{
+    name = Orbit
+    type = Orbit
+    targetBody = Kerbin
+    situation = ORBITING
+    disableOnStateChange = True
+    minPeA = 100000  
+}
+
+PARAMETER
+{
+    name = HasResource
+    type = HasResource
+
+    resource = LiquidFuel
+    minQuantity = 2500.0
+
+    disableOnStateChange = True
+}
+PARAMETER
+{
+    name = HasResource
+    type = HasResource
+
+    resource = SolidFuel
+    maxQuantity = 0.0
+
+    disableOnStateChange = True
+}
+}
+REQUIREMENT
+{
+    name = CompleteContract
+    type = CompleteContract
+    contractType = HGM-25A Titan-I
+    minCount = 1
+    maxCount = 1
+    cooldownDuration = 30d
+}
+}

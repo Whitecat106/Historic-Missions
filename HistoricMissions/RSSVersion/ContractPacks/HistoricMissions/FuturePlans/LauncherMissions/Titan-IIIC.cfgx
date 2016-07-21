@@ -1,0 +1,83 @@
+CONTRACT_TYPE
+{
+    name = Titan-IIIC 
+    group = LauncherMission
+    title = Titan-IIIC 
+    notes = Test a new rocket design.
+    synopsis = Launch a test of the Titan-IIIC 
+    description = The Titan IIIC was an expendable launch system used by the United States Air Force from 1965 until 1982. It was the first Titan booster to feature large solid rocket motors and was planned to be used as a launcher for the Dyna-Soar and Manned Orbiting Laboratory, though both programs were cancelled before any astronauts flew. The majority of the launcher's payloads were DoD satellites, namely for military communications and early warning, though one flight was performed by NASA. The Titan IIIC was launched exclusively from Cape Canaveral while its sibling, the Titan IIID, was launched only from Vandenberg AFB.
+    completedMessage = Mission Success!
+    prestige = Trivial
+    minExpiry = 1
+    maxExpiry = 30
+    agent = USAF
+    deadline = 70
+    maxCompletions = 1
+    cancellable = true
+    declinable = true
+    targetBody = Kerbin
+    rewardScience = 1
+    rewardReputation = 5
+    rewardFunds = 15000
+    failureReputation = 75
+    failureFunds = 50000
+    advanceFunds = 20000
+
+PARAMETER
+{
+	name = Titan-IIIC  
+	type = VesselParameterGroup
+	title = Launch the Titan-IIIC  rocket.
+	define = Titan-IIIC 
+
+PARAMETER 
+{
+	name = Crewmembers
+	type = HasCrew 
+	minCrew = 0
+	maxCrew = 0
+}
+
+PARAMETER
+{
+    name = Orbit
+    type = Orbit
+    targetBody = Kerbin
+    situation = ORBITING
+    disableOnStateChange = True
+    minPeA = 200000
+    minInclination = 25
+    
+}
+
+PARAMETER
+{
+    name = HasResource
+    type = HasResource
+
+    resource = LiquidFuel
+    minQuantity = 1500.0
+
+    disableOnStateChange = True
+}
+PARAMETER
+{
+    name = HasResource
+    type = HasResource
+
+    resource = SolidFuel
+    minQuantity = 1200
+
+    disableOnStateChange = True
+}
+}
+REQUIREMENT
+{
+    name = CompleteContract
+    type = CompleteContract
+    contractType = Delta-A
+    minCount = 1
+    maxCount = 1
+    cooldownDuration = 30d
+}
+}
